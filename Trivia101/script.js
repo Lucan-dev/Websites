@@ -1,1 +1,1 @@
-const api_link = 'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=boolean';
+const api_link = 'https://opentdb.com/api.php?amount=1&category=9&difficulty=easy&type=boolean';
