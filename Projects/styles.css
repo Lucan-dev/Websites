@@ -40,6 +40,12 @@ body {
     position: relative;
 }
 
+.card:hover {
+    position: relative;
+    top: -0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 .card img {
     object-fit: cover;
     width: 100%;
