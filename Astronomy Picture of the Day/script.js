@@ -35,11 +35,19 @@ async function get_data(url) {
             var node = document.createElement("img");
             node.src = data.url;
             wrapper.appendChild(node);
+        } else if (data.media_type == "video") {
+            var node = document.createElement("iframe");
+            node.src = data.url;
+            wrapper.appendChild(node);
         }
+
     } else {
         count++
 
-        year = 2007 + Math.round(Math.random() * 13);
+        current_year = new Date().getFullYear();
+        lowest_year = current_year - 10;
+
+        year = lowest_year + Math.round(Math.random() * (current_year - lowest_year));
         month = Math.round(Math.random() * 12);
         day = Math.round(Math.random() * 28);
 
