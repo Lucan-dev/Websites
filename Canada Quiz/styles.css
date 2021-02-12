@@ -1,0 +1,44 @@
+:root {
+    --emphasis: #ff0000;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+body {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.homelinkbuttons {
+
+    display: table;
+    position: static;
+    width: 200px;
+    padding-top: 30vh;
+    margin: 0 auto;
+}
+
+.linkbutton {
+    color: white;
+    background-color: var(--emphasis);
+    border-color: var(--emphasis);
+    border-style: solid;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.linkbutton:hover {
+    color: var(--emphasis);
+    background-color: white;
+}
